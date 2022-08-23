@@ -1,0 +1,115 @@
+.portfoliogrid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 300px 150px 100px 150px;
+  align-content: center;
+  justify-content: center;
+}
+
+.picture img {
+  @include center2;
+  &:hover {
+    opacity: 0;
+    transition-duration: 1s;
+  }
+}
+.grid1 {
+  grid-area: 1/1/2/2;
+  @include center;
+}
+.grid2 {
+  grid-area: 1/2/2/3;
+  @include center;
+}
+.grid3 {
+  grid-area: 1/3/2/4;
+  @include center;
+}
+.grid4 {
+  grid-area: 2/1/3/2;
+  @include center;
+}
+.grid5 {
+  grid-area: 2/2/3/3;
+  @include center;
+}
+.grid6 {
+  grid-area: 2/3/3/4;
+  @include center;
+}
+.grid7 {
+  grid-area: 3/1/4/2;
+  @include center;
+}
+
+.greybackground {
+  @include center2;
+  background-color: $darkgreyColor;
+}
+
+@media (max-width: 1024px) {
+  .portfoliogrid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 300px 25px 100px 25px;
+    align-content: center;
+    justify-content: center;
+  }
+  .grid3 {
+    grid-area: 2/1/3/2;
+    @include center;
+  }
+  .grid4 {
+    grid-area: 2/2/3/3;
+    @include center;
+  }
+  .grid5 {
+    grid-area: 3/1/4/2;
+    @include center;
+  }
+  .grid6 {
+    grid-area: 3/2/4/3;
+    @include center;
+  }
+  .grid7 {
+    grid-area: 4/1/5/2;
+    @include center;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfoliogrid {
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(1, 1fr);
+    grid-gap: 15px;
+    margin: 300px 10px 100px 10px;
+    align-content: center;
+    justify-content: center;
+  }
+  .grid2 {
+    grid-area: 2/1/3/2;
+    @include center;
+  }
+  .grid3 {
+    grid-area: 3/1/4/2;
+    @include center;
+  }
+  .grid4 {
+    grid-area: 4/1/5/2;
+    @include center;
+  }
+  .grid5 {
+    grid-area: 5/1/6/2;
+    @include center;
+  }
+  .grid6 {
+    grid-area: 6/1/7/2;
+    @include center;
+  }
+  .grid7 {
+    grid-area: 7/1/8/2;
+    @include center;
+  }
+}

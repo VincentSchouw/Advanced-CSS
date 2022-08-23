@@ -1,0 +1,51 @@
+.parent {
+  position: fixed;
+  top: 500px;
+  list-style-type: none;
+  min-width: 265px;
+  left: calc(100% - 55px);
+  padding: 0;
+  transform: translateY(-80%);
+}
+
+.social-media i {
+  color: $whiteColor;
+  text-align: center;
+  width: 35px;
+  font-size: 15px;
+  padding: 17px;
+}
+
+.effect {
+  display: flex;
+  transition: transform 0.6s;
+  align-items: center;
+}
+
+.social-media.twitter {
+  background-color: #00aced;
+}
+
+.social-media.linkedin {
+  background-color: #007bb6;
+}
+
+.social-media.blog {
+  background-color: #e17b77;
+}
+
+.social-media.facebook {
+  background-color: #3b5998;
+}
+
+.social-media.github {
+  background-color: #333;
+}
+
+.link a {
+  color: $whiteColor;
+}
+
+.social-media:hover {
+  transform: translateX(calc(-100% + 80px));
+}

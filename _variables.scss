@@ -1,0 +1,16 @@
+$whiteColor: #fff;
+$greyColor: #c3cfe2;
+$darkgreyColor: rgb(51, 44, 44);
+$purpleblueColor: #686de0;
+$shadowColor: rgba(0, 0, 0, 0.19);
+$namecardWidth: 450px;
+
+@mixin center {
+  text-align: center;
+  margin: auto;
+}
+@mixin center2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
